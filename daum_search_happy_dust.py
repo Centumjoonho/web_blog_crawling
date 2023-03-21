@@ -13,7 +13,6 @@ driver.get('https://www.daum.net/')
 
 input_values = ['스페인 산티아고 순례자의 길',
                 '현지업체 준투어',
-                'dd',
                 'Oslob Whale Shark Watching Tour',
                 '투말록 폭포(Tumalog Falls)',
                 '세부공항환전소 / 막탄공항 유심',
