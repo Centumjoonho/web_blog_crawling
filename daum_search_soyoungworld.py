@@ -2,9 +2,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
 import time
 import pyperclip
+import random
 
 input_values = ['[기장 맛집] 연화반점 / 돌판짜장 / 벌집탕수육',
                 '[울산 카페] 포레이브 frv.',
@@ -18,7 +18,10 @@ input_values = ['[기장 맛집] 연화반점 / 돌판짜장 / 벌집탕수육',
                 '영알종주 9봉 완등 인증서',
                 '실업급여신청 고용보험 이직확인서',
                 '파우제앤숨 식물원 카페 부산근교 카페',
-                '제주도종주 제주도 자전거 종주 제주도 라이딩']
+                '제주도종주 제주도 자전거 종주 제주도 라이딩',
+                ]
+
+print(random.choice(input_values))
 num = 0
 while num < 10:
 
@@ -26,15 +29,16 @@ while num < 10:
     driver.implicitly_wait(1)
     driver.get('https://www.daum.net/')
 
-    for iv in input_values:
+    for i in input_values:
 
+        random_value = random.choice(input_values)
         input = driver.find_element(By.CSS_SELECTOR, "[title = '검색어 입력']")
 
         input.click()
 
         time.sleep(1)
 
-        pyperclip.copy(iv)
+        pyperclip.copy(random_value)
 
         input.send_keys(Keys.CONTROL, 'v')
         search_btn = driver.find_element(By.CLASS_NAME, 'ico_pctop.btn_search')
@@ -45,7 +49,7 @@ while num < 10:
         try:
             my_blog = driver.find_element(By.LINK_TEXT, '토마토는 토마토')
             my_blog.click()
-            time.sleep(2)
+            time.sleep(20)
 
         except:
             print("에러 확인")
@@ -53,16 +57,8 @@ while num < 10:
 
         driver.back()
 
-    time.sleep(1)
+    time.sleep(3)
 
     num += 1
     print("완료 : ", num)
     driver.close()
-
-
-# https://greeksharifa.github.io/references/2020/10/30/python-selenium-usage/
-    # 실패
-    # driver.find_element(By.CSS_SELECTOR, "[id='recent']").click()
-    # driver.find_element(By.LINK_TEXT, '" 필리핀 "').click()
-    # driver.find_element(By.CSS_SELECTOR, ".link_sub_item").click()
-    # driver.find_element(By.CLASS_NAME, 'link_tit').click()
