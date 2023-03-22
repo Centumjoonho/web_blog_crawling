@@ -35,8 +35,6 @@ search_btn.click()
 
 time.sleep(3)
 
-html = driver.page_source
-soup = BeautifulSoup(html, 'html.parser')
 
 # a 태그 특정 link 값으로 연결)
 # https://0433.tistory.com/41

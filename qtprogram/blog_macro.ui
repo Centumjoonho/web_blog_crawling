@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>311</width>
-    <height>412</height>
+    <width>392</width>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,108 +20,210 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>340</y>
-     <width>201</width>
-     <height>61</height>
+     <y>400</y>
+     <width>351</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(25,25,25);
+    <string notr="true">background-color:rgb(102,204,102);
 color: white;
 border-radius: 8px;
-font: 200 24pt &quot;Montserrat&quot;;</string>
+font: 200 20pt &quot;Montserrat&quot;;</string>
    </property>
    <property name="text">
-    <string>시작</string>
+    <string> 시작</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="display_content">
+  <widget class="QPushButton" name="btn_del">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>340</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255,102,102);
+color: white;
+border-radius: 8px;
+font: 200 20pt &quot;Montserrat&quot;;</string>
+   </property>
+   <property name="text">
+    <string>삭제</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_count">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>240</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(50,50,50);
+color: white;
+border-radius: 0px;
+font: 80 20pt &quot;Montserrat&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>240</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(50,50,50);
+color: white;
+border-radius: 0px;
+font: 80 12pt &quot;Montserrat&quot;;
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>여행하는 토마토</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>토마토는 토마토</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextBrowser" name="text_browser">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>20</y>
-     <width>271</width>
-     <height>251</height>
+     <width>351</width>
+     <height>211</height>
     </rect>
    </property>
-   <property name="autoFillBackground">
-    <bool>false</bool>
+   <property name="font">
+    <font>
+     <family>Montserrat</family>
+     <pointsize>10</pointsize>
+     <weight>10</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(25,25,25);
+    <string notr="true">background-color:rgb(50,50,50);
 color: white;
 border-radius: 8px;
-font: 87 24pt &quot;Montserrat&quot;;
+font: 87 10pt &quot;Montserrat&quot;;
 </string>
    </property>
    <property name="html">
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Montserrat'; font-size:24pt; font-weight:80; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;contents&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Montserrat'; font-size:10pt; font-weight:80; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:24pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_del">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>340</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color:rgb(25,25,25);
-color: white;
-border-radius: 8px;
-font: 200 24pt &quot;Montserrat&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Del</string>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="spinBox_count">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>290</y>
-     <width>101</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QLineEdit" name="lineddit_insert">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>290</y>
-     <width>151</width>
-     <height>21</height>
+     <width>351</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(25,25,25);
+    <string notr="true">background-color:rgb(100,100,100);
 color: white;
 border-radius: 8px;
-font: 60 24pt &quot;Montserrat&quot;;
+font: 87 12pt &quot;Montserrat&quot;;
 </string>
    </property>
-   <item>
-    <property name="text">
-     <string>blender</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>python</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>센텀준호</string>
-    </property>
-   </item>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_insert">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(153,204,255);
+color: white;
+border-radius: 8px;
+font: 200 20pt &quot;Montserrat&quot;;</string>
+   </property>
+   <property name="text">
+    <string>입력</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>240</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial black</family>
+     <pointsize>13</pointsize>
+     <weight>10</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0,0,0);
+color: white;
+border-radius: 0px;
+font: 80 13pt &quot;Arial black&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>Count</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0,0,0);
+color: white;
+border-radius: 0px;
+font: 80 13pt &quot;Arial black&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>Blog</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
  </widget>
  <resources/>
