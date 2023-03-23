@@ -11,7 +11,7 @@ hot_input_values = ['파이썬 랜덤 수 만들기', '블랜더 파이썬', '�
                     'Window OS에 MongoDB', ' 네트워크 , Socket , TCP소켓 ', 'Python PyQt5로 계산기 ',
                     ' 구조분해할당(Destructing)', 'Java Spring Ajax', 'mssql cursor trigger',
                     'LINUX Maria 데이터', 'Docker Dockerfile 작성법', 'Flutter 초심자들을 위한 설치', 'iOS SwiftUI Webview 를 띄우기']
-loser_input_values = []
+
 
 num = 0
 while num < 2:
